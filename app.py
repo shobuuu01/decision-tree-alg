@@ -35,11 +35,11 @@ time_encoded = time_mapping[time]
 # Prediction
 input_data = pd.DataFrame({
     'total_bill': [total_bill],
-    'size': [size],
     'sex': [sex_encoded],
     'smoker': [smoker_encoded],
     'day': [day_encoded],
-    'time': [time_encoded]
+    'time': [time_encoded],
+     'size': [size]
 })
 
 if st.button('Predict Tip'):
